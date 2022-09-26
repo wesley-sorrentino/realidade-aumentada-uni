@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Realidade Aumentada</title>
+  <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>-->
+  
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <!-- we import arjs version without NFT but with marker + location based support -->
+        <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+
+  
+  
+</head>
+  
+    <body style="margin : 0px; overflow: hidden;">
+  
+      <a-scene vr-mode-ui="enabled: false" embedded arjs="debugUIEnabled: false;">
+        <a-marker preset="hiro" >
+            <-- usar um proxy-servidor --
+            <a-entity 
+              position="0 0 0" 
+              scale="0.04 0.04 0.04" 
+              rotation="-50 0 0" 
+              gltf-model="https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf">
+            </a-entity>   -->
+            
+          
+          <a-box 
+				      position="0 0 0"
+              scale="0.8 0.8 0.8"
+              color="red">
+    			</a-box>
+          
+      
+          
+        </a-marker>
+        <a-entity camera></a-entity>
+         
+        </a-scene>
+      
+               
+ <p>Realidade Aumentada Educacional</p>
+		     <!-- <style>
+	        	p{font-size:40px;font-family: "Sofia", sans-serif;font-style:italic; text-shadow: 3px 3px 3px #ababab;
+              text-align: center;
+              justify-content: center;
+                           background: #900;
+              color: #FFF;
+              }
+		      </style> -->
+      
+  <!--- Botões 
+      
+      <button class="button is-hidden" id="btnPlay">
+            <span class="icon is-small">
+              <i class="fas fa-play"></i>
+            </span>
+          </button>
+          <button class="button" id="btnPause">
+            <span class="icon is-small">
+              <i class="fas fa-pause"></i>
+            </span>
+          </button>
+          <button class="button is-success" id="btnScreenshot">
+            <span class="icon is-small">
+              <i class="fas fa-camera"></i>
+            </span>
+          </button>
+          <button class="button" id="btnChangeCamera">
+            <span class="icon">
+              <i class="fas fa-sync-alt"></i>
+            </span>
+            <span>Switch camera</span>
+          </button>
+       
+        <div class="column">
+          <h2 class="title">Screenshots</h2>
+          <div id="screenshots"></div>
+        </div>
+  
+  -->
+      
+    </body>
+  
+</html>
